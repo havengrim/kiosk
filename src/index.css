@@ -14,3 +14,6 @@
 body {
   font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+@import 'swiper/css';
+@import 'swiper/css/autoplay';

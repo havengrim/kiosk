@@ -13,7 +13,7 @@ const GetStarted = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center -mt-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center -mt-40">
         <div className="flex flex-col items-center">
           <Lottie
             animationData={animationData}
