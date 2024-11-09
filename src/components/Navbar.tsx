@@ -2,17 +2,23 @@
 import images from '@/assets/images';
 import { useState } from 'react';
 
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="relative bg-white shadow dark:bg-gray-800">
+    <nav className="sticky top-0 z-50 bg-white shadow dark:bg-gray-800">
       <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
         <div className="flex items-center justify-between">
           <a href="#">
             <img
-              className="w-auto h-10 sm:h-14"
+              className="w-auto h-10 sm:h-14 dark:hidden block"
               src={images.logo}
+              alt="Logo"
+            />
+             <img
+              className="w-auto h-10 sm:h-14 dark:block hidden"
+              src={images.lightLogo}
               alt="Logo"
             />
           </a>
