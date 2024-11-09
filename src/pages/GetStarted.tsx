@@ -6,15 +6,10 @@ import voice from '@/assets/voice.mp3';
 
 const GetStarted = () => {
   useEffect(() => {
-    // Set a delay of 3 seconds before playing the audio
-    const timer = setTimeout(() => {
-      const audio = new Audio(voice);
-      audio.play();
-    }, 3000); // 3000ms = 3 seconds
-
-    // Cleanup the timer when the component unmounts
-    return () => clearTimeout(timer);
-  }, []); // Empty dependency array means it runs once when the component mounts
+    // Create an audio element and play it when the component is mounted
+    const audio = new Audio(voice);
+    audio.play();
+  });
 
   return (
     <section>
