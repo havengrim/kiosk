@@ -32,25 +32,25 @@ export default function SwiperSlider() {
     >
       {/* Manually adding the images */}
       <SwiperSlide>
-        <img src={images.image1} alt="Slide 1" className="h-full" />
+        <img src={images.image1} alt="Slide 1" className="h-full w-full" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src={images.image2} alt="Slide 2" className="h-full" />
+        <img src={images.image2} alt="Slide 2" className="h-full w-full" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src={images.image3} alt="Slide 3" className="h-full" />
+        <img src={images.image3} alt="Slide 3" className="h-full w-full" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src={images.image4} alt="Slide 4" className="h-full" />
+        <img src={images.image4} alt="Slide 4" className="h-full w-full" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src={images.image5} alt="Slide 5" className="h-full" />
+        <img src={images.image5} alt="Slide 5" className="h-full w-full" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src={images.image6} alt="Slide 6" className="h-full" />
+        <img src={images.image6} alt="Slide 6" className="h-full w-full" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src={images.image7} alt="Slide 7" className="h-full" />
+        <img src={images.image7} alt="Slide 7" className="h-full w-full" />
       </SwiperSlide>
     </Swiper>
   );
