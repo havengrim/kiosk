@@ -74,28 +74,29 @@ const Board = () => {
               Let us know how we can help.
             </p>
             <div className="grid grid-cols-3 gap-5 mt-4">
-              {[
-                { icon: FaHandHoldingHeart, title: "Program Categories" },
-                { icon: IoIosVideocam, title: "Featured Stories" },
-                { icon: FaClipboardQuestion, title: "Commonly Asked" },
-                { icon: HiMiniNewspaper, title: "Promotion & News" },
-                { icon: IoPeopleSharp, title: "Directory Officials" },
-                { icon: FaClipboardList, title: "Citizen's Charter" },
-              ].map(({ icon: Icon, title }, index) => (
-                <Card
-                  key={index}
-                  className="flex flex-col hover:shadow-lg cursor-pointer bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200"
-                  data-aos="fade-up" // AOS animation for each card
-                >
-                  <CardHeader>
-                    <Icon className="h-12 w-12 bg-indigo-900 p-2 rounded-md text-white" />
-                  </CardHeader>
-                  <CardContent>
-                    <span className="font-semibold text-xl">{title}</span>
-                  </CardContent>
-                </Card>
-              ))}
-              <ModeToggle />
+                {[
+                  { icon: FaHandHoldingHeart, title: "Program Categories" },
+                  { icon: IoIosVideocam, title: "Featured Stories" },
+                  { icon: FaClipboardQuestion, title: "Commonly Asked", url: '/faq' },
+                  { icon: HiMiniNewspaper, title: "Promotion & News" },
+                  { icon: IoPeopleSharp, title: "Directory Officials" },
+                  { icon: FaClipboardList, title: "Citizen's Charter" },
+                ].map(({ icon: Icon, title, url }, index) => (
+                  <a href={url || "#"} key={index}>
+                    <Card
+                      className="flex flex-col hover:shadow-lg cursor-pointer bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200"
+                      data-aos="fade-up" // AOS animation for each card
+                    >
+                      <CardHeader>
+                        <Icon className="h-12 w-12 bg-indigo-900 p-2 rounded-md text-white" />
+                      </CardHeader>
+                      <CardContent>
+                        <span className="font-semibold text-xl">{title}</span>
+                      </CardContent>
+                    </Card>
+                  </a>
+                ))}
+                <ModeToggle />
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@ function Navbar() {
     <nav className="sticky top-0 z-50 bg-white shadow dark:bg-gray-800">
       <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
         <div className="flex items-center justify-between">
-          <a href="#">
+          <a href="/">
             <img
               className="w-auto h-10 sm:h-14 dark:hidden block"
               src={images.logo}
@@ -74,16 +74,16 @@ function Navbar() {
         >
           <div className="flex flex-col md:flex-row">
             <a
-              href="#"
+              href="/board"
               className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
             >
               Home
             </a>
             <a
-              href="#"
+              href="/faq"
               className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
             >
-              Shop
+              FAQ's
             </a>
             <a
               href="#"
